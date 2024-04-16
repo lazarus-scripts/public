@@ -1,4 +1,3 @@
-local espVisible = true
 game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Lazarus Exploits",
 	Text = "Loaded | https://discord.gg/a6qAHVTF",
