@@ -30,7 +30,7 @@ function clip()
 end
 game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Lazarus Exploits",
-	Text = "Loaded | https://discord.gg/a6qAHVTF",
+	Text = "Loaded | https://discord.gg/cDWEbnxFGS",
 	duration = 5
   })
 if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then
