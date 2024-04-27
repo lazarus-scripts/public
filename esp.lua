@@ -1,6 +1,6 @@
 game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Lazarus Exploits",
-	Text = "Loaded | https://discord.gg/a6qAHVTF",
+	Text = "Loaded | https://discord.gg/cDWEbnxFGS",
 	duration = 5
 })
 
