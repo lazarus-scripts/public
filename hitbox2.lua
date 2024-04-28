@@ -6,6 +6,9 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	duration = 5
   })
 
+if not hbSize then
+  hbSize = 10
+end
 local plr = game.Players.LocalPlayer
 local isHb = false
 
