@@ -18,9 +18,10 @@ local function Hb()
         		local size = isHb and 1 or hbSize
         		v.Character.HumanoidRootPart.Transparency = 1
         		v.Character.HumanoidRootPart.Size = Vector3.new(size, size, size)
+			
+			print("Status: " .. tostring(size))
 		end
     	end
-	print("Status: " .. tostring(size))
     	isHb = not isHb
 end
 
