@@ -7,27 +7,27 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
   })
 
 if not hbSize then
-  hbSize = 10
+	hbSize = 10
 end
 local plr = game.Players.LocalPlayer
 local isHb = false
 
 local function Hb()
-    for _, v in ipairs(game.Players:GetChildren()) do
-      if v ~= plr and v.Character and v.Character:FindFirstChild("HumanoidRootPart") then
-        local size = isHb and 1 or hbSize
-        v.Character.HumanoidRootPart.Transparency = 1
-        v.Character.HumanoidRootPart.Size = Vector3.new(size, size, size)
-			end
-    end
-		print("Status: " .. isHb)
-    isHb = not isHb
+	for _, v in ipairs(game.Players:GetChildren()) do
+		if v ~= plr and v.Character and v.Character:FindFirstChild("HumanoidRootPart") then
+        		local size = isHb and 1 or hbSize
+        		v.Character.HumanoidRootPart.Transparency = 1
+        		v.Character.HumanoidRootPart.Size = Vector3.new(size, size, size)
+		end
+    	end
+	print("Status: " .. isHb)
+    	isHb = not isHb
 end
 
 local function onKeyPress(input, gameProcessedEvent)
-    if input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode == Enum.KeyCode.Equals then
-        Hb()
-    end
+    	if input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode == Enum.KeyCode.Equals then
+        	Hb()
+   	end
 end
 
 UserInputService.InputBegan:Connect(onKeyPress)
