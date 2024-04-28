@@ -20,7 +20,7 @@ local function Hb()
         		v.Character.HumanoidRootPart.Size = Vector3.new(size, size, size)
 		end
     	end
-	print("Status: " .. isHb)
+	print("Status: " .. tostring(isHb))
     	isHb = not isHb
 end
 
