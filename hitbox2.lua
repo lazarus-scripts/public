@@ -14,13 +14,13 @@ local isHb = false
 
 local function Hb()
     for _, v in ipairs(game.Players:GetChildren()) do
-        if v ~= plr and v.Character and v.Character:FindFirstChild("HumanoidRootPart") then
-            local size = isHb and 1 or hbSize
-            print(v.Name .. " has the hitbox set to " .. size)
-            v.Character.HumanoidRootPart.Transparency = 1
-            v.Character.HumanoidRootPart.Size = Vector3.new(size, size, size)
-        end
+      if v ~= plr and v.Character and v.Character:FindFirstChild("HumanoidRootPart") then
+        local size = isHb and 1 or hbSize
+        v.Character.HumanoidRootPart.Transparency = 1
+        v.Character.HumanoidRootPart.Size = Vector3.new(size, size, size)
+			end
     end
+		print("Status: " .. isHb)
     isHb = not isHb
 end
 
